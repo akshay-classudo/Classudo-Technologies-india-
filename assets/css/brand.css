@@ -1,0 +1,1090 @@
+/* =============================================
+   Classudo Brand Theme
+   BRAND CORE
+   Coral        #F7764C   (primary CTA / accent)
+   Coral 600    #E85F30   (hover state)
+   Coral 700    #D14E22   (active / pressed)
+   Coral 100    #FDE6DC   (light tint / backgrounds)
+   Navy         #25354F   (headings / dark bg)
+   Navy 700     #1B2840   (deeper dark)
+   Navy 500     #3A4D6B   (mid-tone)
+   Navy 800     #131E30   (darkest)
+============================================= */
+
+:root {
+  --coral: #f7764c;
+  --coral-600: #e85f30;
+  --coral-700: #d14e22;
+  --coral-100: #fde6dc;
+  --navy: #25354f;
+  --navy-500: #3a4d6b;
+  --navy-700: #1b2840;
+  --navy-800: #131e30;
+}
+
+/* --------------------------------------------------
+   Override all legacy orange/red (#ff3c00 family)
+   → Coral #F7764C
+-------------------------------------------------- */
+
+/* Links & hover */
+a:focus,
+a:hover {
+  color: var(--coral);
+}
+.Classudo_menu > ul > li > a:hover {
+  color: var(--coral);
+}
+.Classudo_nav_manu.style-two .Classudo_menu > ul > li > a:hover,
+.Classudo_nav_manu.style-three .Classudo_menu > ul > li > a:hover {
+  color: var(--coral) !important;
+}
+
+.Classudo_menu ul .sub-menu {
+  border-bottom-color: var(--coral-600);
+  border-top-color: var(--coral-600);
+  min-width: 250px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 0 0 6px 6px;
+}
+.Classudo_menu ul .sub-menu li a {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px !important;
+  padding: 10px 18px !important;
+}
+.Classudo_menu ul .sub-menu li a i {
+  font-size: 11px;
+  margin-left: 8px;
+}
+.Classudo_menu ul .sub-menu li:hover > a,
+.Classudo_menu ul .sub-menu .sub-menu li:hover > a {
+  background: var(--coral-600);
+  color: #ffffff !important;
+}
+.Classudo_menu ul .sub-menu .sub-menu {
+  min-width: 250px;
+  border-radius: 0 6px 6px 6px;
+}
+
+/* Header btn */
+.header-btn a,
+.header-btn a::before {
+  color: var(--coral);
+  /* background: var(--coral); */
+}
+
+/* Sticky nav btn */
+.Classudo_nav_manu.sticky a.dtbtn {
+  background: var(--coral);
+  border-color: var(--coral);
+}
+
+/* Hero */
+.hero-contant h5 {
+  color: var(--coral);
+}
+.hero-contant h5::before {
+  background: var(--coral);
+}
+.hero-video-icon a i {
+  background: var(--coral);
+}
+.hero-area .Classudo-hover-btn {
+  background-color: #fff;
+}
+.Classudo-btn a:hover {
+  color: var(--coral);
+}
+
+/* Section sub-title */
+h5.section-sub-title {
+  color: var(--coral);
+  background-color: rgba(247, 118, 76, 0.04);
+}
+h5.section-sub-title::before {
+  background: var(--coral);
+}
+h6.section-sub-title {
+  color: var(--coral);
+}
+h6.section-sub-title::before {
+  background-image: linear-gradient(270deg, #ffffff 0%, var(--coral-600) 100%);
+}
+h6.section-sub-title::after {
+  background-image: linear-gradient(270deg, var(--coral-600) 0%, #ffffff 100%);
+}
+h1.section-main-title span {
+  color: var(--coral);
+}
+
+/* Buttons */
+.Classudo-btn a,
+.Classudo-button a {
+  background: var(--coral-600);
+}
+.Classudo-hover-btn {
+  background-color: var(--navy);
+}
+.btn-2:hover {
+  background-image: linear-gradient(
+    90deg,
+    var(--coral-600) 0%,
+    #ffcf00 49%,
+    var(--coral-700) 80%,
+    var(--coral-600) 100%
+  );
+}
+
+/* Feature box */
+.feature-sinble-single-box:hover {
+  border-color: var(--coral);
+}
+.feature-icon::before {
+  background: var(--navy-700);
+}
+
+/* Blog */
+.blog-date {
+  background: var(--coral);
+}
+.blog-date-tow h4 i {
+  color: var(--coral);
+}
+.blog-date-tow h4 span::before {
+  background: var(--coral);
+}
+h3.blog-title a:hover,
+h3.blog-title-two a:hover,
+.blog-btn a:hover,
+.blog-btn-tow a:hover {
+  color: var(--coral-600);
+}
+
+/* Contact form */
+.quote_button button {
+  background: var(--coral);
+}
+.quote_button button:hover {
+  background: var(--navy);
+}
+.form_box input:focus,
+.form_box textarea:focus {
+  border-color: var(--coral);
+  box-shadow: 0 0 4px rgba(247, 118, 76, 0.5);
+}
+.contact-video-icon a {
+  color: var(--coral);
+}
+textarea:focus {
+  border-color: var(--coral);
+  outline-color: var(--coral);
+}
+
+/* Service */
+.service-btn i {
+  color: var(--coral);
+}
+.service-single-box:hover .service-btn i {
+  background: var(--coral-600);
+}
+
+/* Project */
+p.project-text::before {
+  background: var(--coral);
+}
+h3.project-title a:hover {
+  color: var(--coral);
+}
+.project-area .owl-dot,
+.owl-dot.active {
+  background: var(--coral);
+}
+
+/* Brand bar */
+.brand-area {
+  background: var(--coral);
+}
+
+/* Pricing */
+h1.priching-doller {
+  color: var(--coral);
+}
+.pricing-area .Classudo-hover-btn {
+  background-color: var(--coral);
+}
+.pricing-area .Classudo-btn a {
+  background: var(--coral-100);
+  color: var(--coral);
+}
+.pricing-area .Classudo-btn a:hover {
+  color: #fff;
+}
+ul.pricing-list li i {
+  color: var(--coral);
+}
+
+/* FAQ */
+h3.faq-title span {
+  color: var(--coral);
+}
+.accordion a:before,
+.accordion a:after {
+  background: var(--coral);
+}
+.accordion a.active:after {
+  background: var(--coral);
+}
+
+/* Testimonial */
+h3.testi-title span {
+  color: var(--coral);
+}
+.testimonial-area.style-three .owl-dot.active {
+  background-color: var(--coral);
+}
+.testimonial-area.style-four h4.testi-user-name::before {
+  background-image: linear-gradient(270deg, var(--coral-600) 0%, #ffffff 100%);
+}
+.testimonial-area.style-four h4.testi-user-name::after {
+  background-image: linear-gradient(270deg, #ffffff 0%, var(--coral-600) 100%);
+}
+.testimonial-area.style-four .testi-review-user h3 span {
+  color: var(--coral);
+}
+.testimonial-area.style-four ul.testi-rating::before {
+  background-image: linear-gradient(270deg, #f3f3f3 0%, var(--coral-600) 100%);
+}
+.testimonial-area.style-two .testi-single-box::after {
+  background-color: var(--coral);
+}
+
+/* Address bar */
+.address-area {
+  background: var(--coral);
+}
+.address-area .Classudo-btn a:hover {
+  color: var(--coral);
+}
+
+/* Footer */
+.footer-widget.left ul li a::before {
+  background: var(--coral);
+}
+.footer-widget.left ul li a:hover,
+.copyright-list ul li a:hover,
+.footer-widget-social a i:hover {
+  color: var(--coral);
+}
+.form-field2 button {
+  background-color: var(--coral);
+}
+
+/* Cursor */
+.curser {
+  border-color: var(--coral);
+}
+.curser2 {
+  background: var(--coral);
+}
+
+/* Scroll-to-top */
+.top-wrap .go-top-button {
+  background: var(--coral-600);
+}
+
+/* Loader */
+.loader {
+  border-top-color: var(--coral-600);
+}
+.loader:before {
+  border-left-color: var(--coral);
+}
+
+/* Sidebar / widgets */
+.xs-bg-black {
+  background-color: var(--coral-600);
+}
+.nav-btn.navSidebar-button a {
+  color: var(--coral-600);
+}
+button.icon {
+  background: var(--coral-600);
+}
+.sidebar-tag-item a {
+  color: var(--coral-600);
+  border-color: var(--coral-600);
+}
+.sidebar-tag-item a:before {
+  background: var(--coral-600);
+}
+.widget-catefories-tags a:before {
+  background: var(--coral-600);
+}
+.widget-sidber-contact-btn a {
+  background: var(--coral-600);
+  border-color: var(--coral-600);
+}
+.widget-sidber-contact-btn a:hover {
+  color: var(--coral-600);
+}
+.widget-sidber-download-button a.active {
+  background: var(--coral-600) !important;
+}
+.widget-category ul li a:before {
+  background: var(--coral);
+}
+.sidber-widget-recent-post:hover .recent-widget-content a {
+  color: var(--coral-600) !important;
+}
+.recent-widget-content p {
+  color: var(--coral-600);
+}
+.widget-sidber-content h4:before {
+  background: var(--coral-600);
+}
+span.widget-sidber-contact-gmail i {
+  color: var(--coral-600);
+}
+
+/* About us */
+.about-us-list ul li::before {
+  background: var(--coral-600);
+}
+.about-us-area .counter-content h4,
+.counter-content span {
+  color: var(--coral);
+}
+.about-us-video-icon a i {
+  background: var(--coral-600);
+}
+.about-us-video-icon a span {
+  color: var(--coral);
+}
+
+/* Skills */
+.skill-bar {
+  background: var(--coral-600);
+}
+.skill-bar span {
+  color: var(--coral-600);
+}
+
+/* Team */
+.team-area.style-two .single-team-thumb::after,
+.team-area.style-inner .single-team-thumb::after {
+  background-color: var(--coral);
+}
+.team-area.style-two .team-inner-title,
+.team-area.style-inner .team-inner-title {
+  background-color: var(--coral);
+}
+.team-area.style-two .team-social-icon ul li a:hover {
+  color: var(--coral);
+}
+.team-details-area .contact-info-icon i {
+  color: var(--coral-600);
+  border-color: var(--coral-600);
+}
+.team-details-area .contact-info-content p {
+  color: var(--coral-600);
+}
+.team-details-area .team-details-social-icon ul li i:hover {
+  background: var(--coral-600);
+}
+
+/* Case studies */
+.case-studies-btn a {
+  background-color: var(--coral);
+}
+.case-studies-btn a:hover {
+  color: var(--coral);
+}
+.case-studies-thumb::before {
+  background-image: linear-gradient(
+    180deg,
+    rgba(247, 118, 76, 0) 37%,
+    rgba(247, 118, 76, 1) 100%
+  );
+}
+.case-studie-content h6 {
+  color: var(--coral);
+}
+.case-studies-icon {
+  background-color: var(--coral);
+}
+.case-studies-content h5 {
+  color: var(--coral);
+}
+.case-studies-content h5::before {
+  background-image: linear-gradient(270deg, #15192b 0%, var(--coral-600) 100%);
+}
+
+/* Working process */
+.process-thumb:before {
+  border-color: var(--coral);
+}
+.process-number span {
+  background-color: var(--coral);
+}
+.working-process-bottom p span {
+  color: var(--coral);
+}
+
+/* Our service section (home 3) */
+.our-service-section .service-icon {
+  background-color: var(--coral);
+}
+.our-service-section h4.service-title:hover {
+  color: var(--coral);
+}
+.our-service-section h4.service-title::before {
+  background-image: linear-gradient(270deg, #ffffff 0%, var(--coral-600) 100%);
+}
+
+/* Hero home 3 */
+.hero-area.style-three .hero-contant h6 {
+  color: var(--coral);
+}
+.hero-area.style-three .hero-contant h6::before,
+.hero-area.style-three .hero-contant h6::after {
+  background-color: var(--coral);
+}
+.hero-area.style-three .hero-contant span {
+  color: var(--coral);
+}
+.hero-area.style-three .hero-btn-profile a span {
+  color: var(--coral);
+}
+.hero-active .owl-prev::before {
+  background-image: linear-gradient(0deg, var(--coral-600) 0%, #05091d 100%);
+}
+.hero-active .owl-prev::after {
+  background-image: linear-gradient(0deg, #05091d 0%, var(--coral-600) 100%);
+}
+
+/* Marquee */
+.marquee-section {
+  background-color: var(--coral);
+}
+
+/* Blog style-two */
+.blog-area.style-two .single-blog-box::after {
+  background-color: var(--coral);
+}
+.blog-area.style-two .blog-meta-top a {
+  background: var(--coral);
+}
+.blog-area.style-two .blog-meta-top a:hover {
+  color: var(--coral-600);
+}
+.blog-area.style-two .blog-button a {
+  color: var(--coral);
+}
+.blog-area.style-two .meta-blog span i {
+  color: var(--coral);
+}
+
+/* Blog grid */
+.blog-area.style-grid .blog-button a::before {
+  background: var(--coral);
+}
+.blog-area.style-grid .meta-blog span i {
+  color: var(--coral);
+}
+.blog-area.style-grid .blog-box-content h3 a:hover {
+  color: var(--coral-600);
+}
+
+/* Blog details */
+.blog-details-area span.mate-text:before {
+  background: var(--coral-600);
+}
+.blog-details-area .meta-blog i {
+  color: var(--coral-600);
+}
+.blog-details-author-title span:before {
+  background: var(--coral-600);
+}
+.blog-details-list-item ul li i {
+  color: var(--coral-600);
+}
+.blog-details-category span a:hover,
+.blog-details-category span a.active-class {
+  background: var(--coral-600);
+}
+.blog-details-social-icon ul li i {
+  background: var(--coral-600);
+}
+.blog-details-submi-button button {
+  background: var(--coral-600);
+  border-color: var(--coral-600);
+}
+.blog-details-submi-button button:hover {
+  color: var(--coral-600);
+}
+.blog-details-comment-reply a {
+  background: var(--coral-600);
+}
+
+/* Project details */
+.project-details-list-item ul li i {
+  color: var(--coral-600);
+}
+a.project-details-text {
+  color: var(--coral-600);
+}
+
+/* Service details */
+.service-details-list li i {
+  color: var(--coral-600);
+}
+.services-details-area .accordion li a {
+  color: var(--coral-600) !important;
+}
+.services-details-area ul.accordion a.active {
+  background: var(--navy) !important;
+}
+.services-details-area ul.accordion a.active span {
+  background: var(--navy) !important;
+}
+
+/* Case study filter */
+li.current_menu_item {
+  background: var(--coral-600) !important;
+}
+.case_study_menu ul li::before {
+  background-color: var(--coral-600);
+}
+.case-study-title h5 {
+  color: var(--coral);
+}
+.case-study-title h3 a:hover {
+  color: var(--coral-600);
+}
+.case-study-content:hover .case-study-icon {
+  background: var(--coral-600);
+}
+
+/* Top header social */
+.top-header-social-icon ul li i:hover {
+  background-color: var(--coral);
+}
+
+/* Service area style-two */
+.service-area.style-two .single-service-box::after {
+  background-color: var(--coral);
+}
+.service-area.style-two .single-service-box:hover .service-icon {
+  background: var(--coral-600);
+}
+
+/* About area style-two */
+.about-area.style-two .about-list-item ul li {
+  border-bottom-color: rgba(122, 122, 122, 0.4);
+}
+
+/* Project area style-two */
+.project-area.styl-two .project-single-box::after {
+  background-color: var(--coral);
+}
+.project-area.styl-two .project-icon span {
+  color: var(--coral);
+}
+.project-area.styl-two .project-single-box:hover .project-icon span {
+  background: var(--coral-600);
+}
+.project-area.styl-two .owl-prev {
+  color: var(--coral-600);
+}
+.project-area.styl-two .owl-prev:hover,
+.project-area.styl-two .owl-next {
+  background-color: var(--coral-600);
+}
+
+/* --------------------------------------------------
+   Override all legacy dark navy (#050a1e / #171a2b family)
+   → Navy #25354F
+-------------------------------------------------- */
+
+body {
+  color: #6b7280;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--navy);
+}
+.sticky {
+  background: var(--navy-700) !important;
+}
+.hero-contant h1 {
+  color: #ffffff;
+}
+h1.section-main-title,
+h3.faq-title {
+  color: var(--navy);
+}
+.Classudo-hover-btn {
+  background-color: var(--navy);
+}
+.project-content {
+  background: var(--navy-700);
+}
+.testi-single-box {
+  background: var(--navy-700);
+}
+.feature-icon::before {
+  background: var(--navy-700);
+}
+.form-field2 input {
+  background-color: var(--navy-700);
+}
+.case-studies-area {
+  background-color: var(--navy);
+}
+.case-studies-box {
+  background: linear-gradient(
+    to bottom,
+    var(--navy-500),
+    var(--navy),
+    var(--navy-800)
+  );
+}
+.case-studies-content h4,
+.case-studies-content h4 a {
+  color: #f4f4f4;
+}
+.hero-area.style-three {
+  background: var(--navy);
+}
+.top-header-area {
+  background-color: var(--navy);
+}
+.counter-area .row.counter-item {
+  /* keeps its own bg image */
+}
+p.project-text {
+  background-color: var(--navy);
+}
+.project-area.styl-two .project-icon span {
+  background-color: var(--navy-700);
+}
+.about-us-video-icon a i::after {
+  background: var(--navy);
+}
+
+/* =============================================
+   Interactive Service Tiles & Category Filters
+   (Using Standard Site Fonts: Poppins & Fira Sans)
+   ============================================= */
+.service-filter-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 35px 0 45px;
+}
+
+.service-filter-btn {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f4;
+  color: #050a1e;
+  border: 1px solid #e2e8f0;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-filter-btn:hover,
+.service-filter-btn.active {
+  background: var(--coral-600);
+  color: #ffffff;
+  border-color: var(--coral-600);
+  box-shadow: 0 6px 18px rgba(247, 118, 76, 0.22);
+}
+
+.service-filter-btn i {
+  font-size: 14px;
+}
+
+.service-tile-item {
+  margin-bottom: 30px;
+  transition: all 0.4s ease;
+}
+
+.service-tile-item.hide {
+  display: none !important;
+}
+
+.service-tile {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 35px 28px 28px;
+  border: 1px solid #eef2f6;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.service-tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--coral-600);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(5, 10, 30, 0.08);
+  border-color: rgba(247, 118, 76, 0.3);
+}
+
+.service-tile:hover::before {
+  opacity: 1;
+}
+
+.tile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.tile-icon-box {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: rgba(247, 118, 76, 0.08);
+  color: var(--coral-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.service-tile:hover .tile-icon-box {
+  background: var(--coral-600);
+  color: #ffffff;
+}
+
+.tile-cat-badge {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--coral-600);
+  background: rgba(247, 118, 76, 0.08);
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(247, 118, 76, 0.2);
+}
+
+.tile-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #050a1e;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.tile-title a {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #050a1e;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.service-tile:hover .tile-title a {
+  color: var(--coral-600);
+}
+
+.tile-desc {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  color: #7a7a7a;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.tile-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #f4f4f4;
+}
+
+.tile-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #050a1e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.service-tile:hover .tile-link {
+  color: var(--coral-600);
+}
+
+.tile-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f4f4f4;
+  color: #050a1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.service-tile:hover .tile-arrow {
+  background: var(--coral-600);
+  color: #ffffff;
+}
+
+/* Service Icon Alignment & Right Side Heading Positioning */
+.sservice-area.style-two .service-header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.sservice-area.style-two .service-icon {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  margin-bottom: 0 !important;
+  width: 48px !important;
+  height: 48px !important;
+  line-height: 48px !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+  background-color: var(--coral-600) !important;
+}
+
+.sservice-area.style-two .service-icon img {
+  max-width: 24px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: brightness(0) invert(1);
+}
+
+.sservice-area.style-two .service-content {
+  padding: 22px 20px 20px 22px !important;
+}
+.team-area.style-two .single-team-box::before,
+.team-area.style-inner .single-team-box::before {
+  background: var(--navy);
+}
+.quote_button button:hover {
+  background: var(--navy);
+}
+.address-area .Classudo-btn a {
+  background: var(--navy);
+}
+.service-area.style-two .single-service-box::before {
+  background-color: var(--navy);
+}
+.testimonial-area.style-two .testi-single-box::before {
+  background-color: var(--navy);
+}
+
+/* =============================================
+   Mobile Header Fixes
+   ============================================= */
+
+/* Fix red bar → navy */
+.mean-container .mean-bar {
+  background: var(--navy) !important;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px !important;
+}
+
+/* Hide the text "Classudo" pseudo-element */
+.mean-container .mean-bar::before {
+  display: none !important;
+}
+
+/* Inject logo image via the mobile-menu-area wrapper */
+.mobile-menu-area {
+  background: var(--navy) !important;
+  position: relative;
+}
+
+.mobile-menu-area::before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 40px;
+  background: url("../images/classudo-logo.png") no-repeat left center;
+  background-size: contain;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Hamburger icon color */
+.mean-container a.meanmenu-reveal {
+  color: #fff !important;
+  top: 10px !important;
+}
+.mean-container a.meanmenu-reveal span {
+  background: #fff !important;
+}
+
+/* Nav dropdown background */
+.mean-container .mean-nav {
+  background: var(--navy-700) !important;
+}
+.mean-container .mean-nav ul li {
+  background: var(--navy-700) !important;
+  border-top-color: rgba(255, 255, 255, 0.08) !important;
+}
+.mean-container .mean-nav ul li a {
+  background: var(--navy-700) !important;
+  color: #fff !important;
+}
+.mean-container .mean-nav ul li a:hover {
+  background: var(--coral) !important;
+  color: #fff !important;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+  background: transparent !important;
+  color: #fff !important;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+  background: var(--coral) !important;
+}
+.mean-container .mean-nav ul li li a {
+  background: var(--navy-500) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-top-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* =============================================
+   Landing Page UX Utilities & Card Hover Effects
+   ============================================= */
+.service-tile, .single-portfolio-box, .pricing-card, .feature-card-hover {
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s ease !important;
+}
+
+.service-tile:hover, .feature-card-hover:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 32px rgba(5, 10, 30, 0.08) !important;
+}
+
+.service-tile:hover .tile-arrow {
+  transform: translateX(4px) !important;
+  color: var(--coral-600) !important;
+}
+
+.tile-arrow {
+  transition: transform 0.25s ease, color 0.25s ease !important;
+}
+
+/* Portfolio Filter Buttons */
+.portfolio-filter-btn {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.portfolio-filter-btn:hover, .portfolio-filter-btn.active {
+  background: var(--coral-600);
+  color: #ffffff;
+  border-color: var(--coral-600);
+}
+
+/* Timeline Process UI */
+.process-step-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--coral-600);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =============================================
+   Override Bootstrap Danger Red -> Brand Coral Accent
+   ============================================= */
+.text-danger {
+  color: var(--coral-600) !important;
+}
+.bg-danger {
+  background-color: var(--coral-600) !important;
+}
+.btn-danger {
+  background-color: var(--coral-600) !important;
+  border-color: var(--coral-600) !important;
+  color: #ffffff !important;
+}
+.btn-outline-danger {
+  color: var(--coral-600) !important;
+  border-color: var(--coral-600) !important;
+  background-color: transparent !important;
+}
+.btn-outline-danger:hover {
+  background-color: var(--coral-600) !important;
+  color: #ffffff !important;
+}
+.border-danger {
+  border-color: var(--coral-600) !important;
+}
+
+
